@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/* font-family: "Concert One", system-ui; */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+/* font-family: "Nerko One", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/* font-family: "Dancing Script", cursive; */
+
+* {
+    box-sizing: border-box;    
+    background-color: rgb(199, 186, 206);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.foro, li,li a{
+    font-family: "Concert One", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: wheat;
+    text-decoration: none;
+    background-color: rgb(119, 102, 136);
+}
+header {
+    background-color: rgb(119, 102, 136);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;    
+}
+.isotipo {
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+    margin-right: auto;
+    background-color: rgb(119, 102, 136);
+}
+nav {
+    background-color: rgb(119, 102, 136);
+}
+.nav-links {
+    list-style: none;
+    background-color: rgb(119, 102, 136);
+    padding-top: 11px;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover{
+    color: #0088a9;
+}
+button {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: wheat;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px !important;
+    /* aqui no se por que no funciona border radius así que le puse !important */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.descripcion {
+    padding: 0 10%;
+}
+.descripcion h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+    padding: 0 0 0 5%;
+    margin: 0 1rem 1rem 1rem;
+}
+.descripcion p{
+    text-indent: 3rem;
+}
+
+.img img {
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+.img img:hover{
+    filter: brightness(90%);
+}
+.galeria{
+    display: flex;
+    padding: 0 10%;
+}
+.img {
+    flex: 25%;
+    padding: 5px;
+    
+}
+.img img{
+    margin-top: 5px;
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+h3 {
+    font-family: "Dancing Script", cursive;   
+
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ff6347;}
+
+
+footer, .social-media, a, i, h3{
+    background-color:rgb(119, 102, 136) ;
+}
